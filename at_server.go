@@ -8,5 +8,5 @@ import (
 type AlephTauServer struct {}
 
 func (s *AlephTauServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-  fmt.Println(r.URL.RawPath)
+  fmt.Println(r.URL.Path)
 }
