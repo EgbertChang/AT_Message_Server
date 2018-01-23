@@ -6,12 +6,15 @@ import (
   "log"
   "time"
   "AT_Message_Server/alephtau"
+  "AT_Message_Server/handle"
 )
 
 
 func main() {
   fmt.Println("Alephtau Server is starting")
-
+  
+  handle.RegisterHandles()
+  
   server := &http.Server{
     Addr: ":9090",
     Handler: &alephtau.Server{},    // type Handler interface {}，handler to invoke, http.DefaultServeMux if nil
