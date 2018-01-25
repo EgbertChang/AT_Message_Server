@@ -13,7 +13,7 @@ import (
 func main() {
   fmt.Println("Alephtau Server is starting")
   
-  handle.RegisterHandles()
+  handle.Manager()
   
   server := &http.Server{
     Addr: ":9090",
