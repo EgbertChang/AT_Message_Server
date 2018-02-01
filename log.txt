@@ -1,0 +1,4 @@
+Alephtau Server is starting
+Alephtau Server is running
+{"code":0,"description":"OK","result":""}
+{"code":0,"description":"OK","result":""}
